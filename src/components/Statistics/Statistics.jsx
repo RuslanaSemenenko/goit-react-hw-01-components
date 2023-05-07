@@ -4,7 +4,7 @@ import { StyledStatistics } from './Styled';
 function Statistics({ title, stats = [] }) {
   return (
     <StyledStatistics>
-      <div className="stats-title">{title}</div>
+      {title && <div className="stats-title">{title}</div>}
 
       <ul className="stats">
         {stats.length > 0 &&
